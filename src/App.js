@@ -83,6 +83,14 @@ export default function App() {
           margin: "auto"
         }}
       >
+        <h3
+          style={{
+            marginTop: "0",
+            color: "#393E46"
+          }}
+        >
+          Emojis we know
+        </h3>
         {listOfEmojis.map((emoji) => (
           <span
             onClick={() => clickHandler(emoji)}
