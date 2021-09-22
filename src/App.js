@@ -2,6 +2,12 @@ import "./styles.css";
 import React, { useState } from "react";
 
 const emojiDictionary = {
+  "😊": "Smiling",
+  "😳": "disbelief",
+  "😔": "sad",
+  "🥡": "takeout box",
+  "❤️": "love",
+  "😑": "annoyance",
   "💤": "Sleeping",
   "📢": "Loud-Speaker",
   "⚕️": "Medical-symbol",
@@ -10,13 +16,13 @@ const emojiDictionary = {
   "🏪": "Convenience-Store",
   "🏭": "Factory",
   "🛸": "Flying-Suacer",
-  "": "Search your emoji"
+  "": "Emoji meaning will apper here"
 };
 
 var listOfEmojis = Object.keys(emojiDictionary);
 
 export default function App() {
-  const [meaning, setMeaning] = useState("Search your emoji");
+  const [meaning, setMeaning] = useState("Emoji meaning will appear here");
   const [selectedEmoji, setSelectedEmoji] = useState("");
 
   function changeHandler(inputEmoji) {
@@ -40,11 +46,12 @@ export default function App() {
 
   return (
     <div className="App" style={{ maxWidth: "90vw" }}>
-      <h1>Emoji Interpretor</h1>
+      <h1>Emoji interpreter</h1>
       <input
+        placeholder="Enter emoji or choose from below"
         onChange={changeHandler}
         type="text"
-        style={{ marginBottom: "1rem" }}
+        style={{ marginBottom: "1rem", width: "20rem" }}
       ></input>
       <h2>{selectedEmoji}</h2>
       <h3>{meaning}</h3>
@@ -65,3 +72,4 @@ export default function App() {
     </div>
   );
 }
+
