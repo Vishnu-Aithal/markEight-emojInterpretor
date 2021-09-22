@@ -3,11 +3,11 @@ import React, { useState } from "react";
 
 const emojiDictionary = {
   "😊": "Smiling",
-  "😳": "disbelief",
-  "😔": "sad",
-  "🥡": "takeout box",
-  "❤️": "love",
-  "😑": "annoyance",
+  "😳": "Disbelief",
+  "😔": "Sad",
+  "🥡": "Takeout-Box",
+  "❤️": "Love",
+  "😑": "Annoyance",
   "💤": "Sleeping",
   "📢": "Loud-Speaker",
   "⚕️": "Medical-symbol",
