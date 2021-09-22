@@ -19,12 +19,23 @@ export default function App() {
   const [meaning, setMeaning] = useState("Search your emoji");
   const [selectedEmoji, setSelectedEmoji] = useState("");
 
-  function changeHandler(userEmoji) {
-    setSelectedEmoji(userEmoji.target.value);
+  function changeHandler(inputEmoji) {
+    var currentEmoji = inputEmoji.target.value;
+    setSelectedEmoji(currentEmoji);
+    setMeaning(findMeaning(currentEmoji));
   }
 
-  function clickHandler(userEmoji) {
-    setSelectedEmoji(userEmoji);
+  function clickHandler(clickedEmoji) {
+    setSelectedEmoji(clickedEmoji);
+    setMeaning(findMeaning(clickedEmoji));
+  }
+
+  function findMeaning(inputEmoji) {
+    if (inputEmoji in emojiDictionary) {
+      return emojiDictionary[inputEmoji];
+    } else {
+      return "Sorry we dont have that emoji";
+    }
   }
 
   return (
@@ -37,13 +48,18 @@ export default function App() {
       ></input>
       <h2>{selectedEmoji}</h2>
       <h3>{meaning}</h3>
-      {listOfEmojis.map((Emoji) => (
+      {listOfEmojis.map((emoji) => (
         <span
-          onClick={clickHandler}
-          style={{ fontSize: "2rem", padding: "0.5rem", marginTop: "2rem" }}
+          onClick={() => clickHandler(emoji)}
+          style={{
+            fontSize: "2rem",
+            padding: "0.5rem",
+            marginTop: "2rem",
+            cursor: "pointer"
+          }}
         >
           {" "}
-          {Emoji}{" "}
+          {emoji}{" "}
         </span>
       ))}
     </div>
