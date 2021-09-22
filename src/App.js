@@ -111,7 +111,7 @@ export default function App() {
           width: "550px",
           maxWidth: "90vw",
           margin: "auto",
-          marginTop: "10rem",
+          marginTop: "7rem",
           backgroundColor: "#222831",
           color: "#00ADB5",
           borderRadius: "0.5rem 0.5rem 0 0 "
@@ -129,8 +129,7 @@ export default function App() {
               textDecoration: "none",
               color: "#00ADB5"
             }}
-            target="_blank"
-            href="https://github.com/Vishnu-Aithal"
+            href="https://www.github.com/Vishnu-Aithal"
           >
             Github
           </a>
@@ -140,8 +139,7 @@ export default function App() {
               textDecoration: "none",
               color: "#00ADB5"
             }}
-            target="_blank"
-            href="https://twitter.com/Vishnu_Aithal"
+            href="https://www.twitter.com/Vishnu_Aithal"
           >
             Twitter
           </a>
@@ -151,8 +149,7 @@ export default function App() {
               textDecoration: "none",
               color: "#00ADB5"
             }}
-            target="_blank"
-            href="www.linkedin.com/in/vishnu-aithal"
+            href="https://www.linkedin.com/in/vishnu-aithal"
           >
             linkedin
           </a>
@@ -161,4 +158,3 @@ export default function App() {
     </div>
   );
 }
-
