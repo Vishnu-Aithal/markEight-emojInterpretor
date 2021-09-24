@@ -106,55 +106,7 @@ export default function App() {
           </span>
         ))}
       </div>
-      <footer
-        style={{
-          width: "550px",
-          maxWidth: "90vw",
-          margin: "auto",
-          marginTop: "7rem",
-          backgroundColor: "#222831",
-          color: "#00ADB5",
-          borderRadius: "0.5rem 0.5rem 0 0 "
-        }}
-      >
-        <h3 style={{ paddingTop: "0.5rem" }}>Contact Me</h3>
-        <div
-          style={{
-            padding: "0.5rem"
-          }}
-        >
-          <a
-            style={{
-              padding: "0.5rem",
-              textDecoration: "none",
-              color: "#00ADB5"
-            }}
-            href="https://www.github.com/Vishnu-Aithal"
-          >
-            Github
-          </a>
-          <a
-            style={{
-              padding: "0.5rem",
-              textDecoration: "none",
-              color: "#00ADB5"
-            }}
-            href="https://www.twitter.com/Vishnu_Aithal"
-          >
-            Twitter
-          </a>
-          <a
-            style={{
-              padding: "0.5rem",
-              textDecoration: "none",
-              color: "#00ADB5"
-            }}
-            href="https://www.linkedin.com/in/vishnu-aithal"
-          >
-            linkedin
-          </a>
-        </div>
-      </footer>
+
     </div>
   );
 }
