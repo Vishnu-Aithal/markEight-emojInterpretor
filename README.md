@@ -17,3 +17,6 @@ An Emoji Interpreter App created with CodeSandbox.
 2. If emoki present in DataBase meaning will appear below Input with the Emoji.
 3. Alternately you can choose emojis from the list.
 ---
+
+> ## Live Link:
+- https://n8z91.csb.app/
